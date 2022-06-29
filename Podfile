@@ -12,10 +12,5 @@ target 'CatBooth' do
     pod 'SnapshotTesting'
     # Pods for testing
   end
-
-  target 'CatBoothUITests' do
-    
-    # Pods for testing
-  end
-
+  
 end
