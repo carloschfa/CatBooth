@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TagCellIdentifier" id="gTV-IL-0wX" customClass="TagCollectionViewCell" customModule="CatBooth" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="104" height="36"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="104" height="36"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tza-nk-5ER">
+                        <rect key="frame" x="0.0" y="0.0" width="104" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TagName" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCv-tH-Jfe">
+                                <rect key="frame" x="8" y="0.0" width="88" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7803921568627451" green="0.17802314381423553" blue="0.0010132774109390136" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GCv-tH-Jfe" firstAttribute="leading" secondItem="Tza-nk-5ER" secondAttribute="leading" constant="8" id="Pmg-JN-6o7"/>
+                            <constraint firstItem="GCv-tH-Jfe" firstAttribute="top" secondItem="Tza-nk-5ER" secondAttribute="top" id="Req-GV-q35"/>
+                            <constraint firstAttribute="bottom" secondItem="GCv-tH-Jfe" secondAttribute="bottom" id="TT9-Zw-1wS"/>
+                            <constraint firstAttribute="trailing" secondItem="GCv-tH-Jfe" secondAttribute="trailing" constant="8" id="yDY-bt-h8R"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Tza-nk-5ER" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4lo-9Y-dP9"/>
+                <constraint firstAttribute="bottom" secondItem="Tza-nk-5ER" secondAttribute="bottom" id="VxL-nd-E1T"/>
+                <constraint firstAttribute="trailing" secondItem="Tza-nk-5ER" secondAttribute="trailing" id="hZC-CQ-oqV"/>
+                <constraint firstItem="Tza-nk-5ER" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="laH-7A-bMF"/>
+            </constraints>
+            <size key="customSize" width="104" height="50"/>
+            <connections>
+                <outlet property="label" destination="GCv-tH-Jfe" id="ZYB-fD-sK3"/>
+                <outlet property="tagView" destination="Tza-nk-5ER" id="305-iu-0pW"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="152.67857142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

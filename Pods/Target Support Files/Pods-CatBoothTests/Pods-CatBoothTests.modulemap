@@ -1,0 +1,6 @@
+framework module Pods_CatBoothTests {
+  umbrella header "Pods-CatBoothTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
